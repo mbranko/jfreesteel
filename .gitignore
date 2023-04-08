@@ -7,3 +7,4 @@ keys/
 sign.sh
 .idea/
 *.iml
+.vscode/
