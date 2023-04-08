@@ -224,7 +224,7 @@ public class GUIPanel extends JPanel {
         gbc_addressDate.anchor = GridBagConstraints.NORTH;
         gbc_addressDate.fill = GridBagConstraints.HORIZONTAL;
         gbc_addressDate.gridx = 1;
-        gbc_addressDate.gridy = 3;
+        gbc_addressDate.gridy = 2;
         panel_2.add(addressDate, gbc_addressDate);
 
         JLabel dateOfBirthLabel = new JLabel(bundle.getString("DateOfBirth")); //$NON-NLS-1$

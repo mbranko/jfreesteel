@@ -367,7 +367,7 @@ public class EidInfo {
         String value = get(Tag.ADDRESS_DATE);
         if (value == null || value.equals("01010001"))
             return null;
-        return formatDate(get(Tag.APPARTMENT_NUMBER));
+        return formatDate(get(Tag.ADDRESS_DATE));
     }
 
     @Override

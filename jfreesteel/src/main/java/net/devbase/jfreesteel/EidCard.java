@@ -92,6 +92,9 @@ public abstract class EidCard {
         if(EidCardGemalto.isKnownAtr(atrBytes))
             return new EidCardGemalto(card);
 
+        if(EidCardSmartCafe.isKnownAtr(atrBytes))
+            return new EidCardSmartCafe(card);
+
         throw new IllegalArgumentException(
                 String.format("EidCard: Card is not recognized as Serbian eID. Card ATR: %s",
                         Utils.bytes2HexString(atrBytes)));
